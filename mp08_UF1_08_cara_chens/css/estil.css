@@ -1,0 +1,299 @@
+* {
+    position: relative;
+}
+body {
+    background-color: black;
+    margin: 0;
+}
+p {
+    color: white;
+    font-size: 200px;
+    position: absolute;
+    z-index: 4;
+    width: 200px;
+    overflow: inherit;
+    top: -80px;
+    left: 950px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+.cap {
+    width: 500px;
+    height: 700px;
+    background-color: antiquewhite;
+    border-radius: 40% 40% 50% 50%;
+    margin: 200px 0 0 250px;
+    overflow: visible;
+}
+.pel {
+    width: 650px;
+    height: 800px;
+    background-color: black;
+    position: absolute;
+    z-index: -2;
+    left: -75px;
+    top: -20px;
+    border-radius: 40% 40% 0 0;
+}
+.front {
+    height: 250px;
+    background-color: black;
+    border-radius: 40% 40% 0 0;
+}
+.front:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    bottom: 0;
+    left: 370px;
+    background-color: antiquewhite;
+    clip-path: polygon(100% 100%, 70% 0, 0 100%);
+}
+.celles {
+    height: 50px;
+}
+.cella {
+    width: 180px;
+    height: 40px;
+    background-image: linear-gradient(to right, antiquewhite, black, black);
+    float: left;
+    margin: 20px 20px 0 40px;
+    border-radius: 100% 100% 50% 30%;
+}
+.cella.esq {
+    transform: scaleX(-1);
+}
+.cella:before {
+    content: "";
+    width: 200px;
+    height: 30px;
+    background-color: antiquewhite;
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: -10px;
+    border-radius: 100% 100% 0 0;
+}
+.ulls {
+    height: 150px;
+}
+.ull {
+    width: 130px;
+    height: 100px;
+    background-color: white;
+    float: left;
+    margin: 10px 40px 0 65px;
+    border-radius: 100% 10% 100% 10%;
+    border-top: solid black 10px;
+    border-right: solid pink 5px;
+    transform: rotate(30deg);
+    z-index: 1;
+    box-shadow: -3px -15px 5px rgb(247, 188, 198);
+    overflow: hidden;
+}
+.ull.esq {
+    transform: scaleX(-1) rotate(30deg);  
+}
+.llum {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    top: 14px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.boleta {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(121, 0, 0);
+    border: solid black 6px;
+    top: 30px;
+    left: 8px;
+}
+.boleta:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 9px;
+    left: 9px;
+    background-color: black;
+}
+.ulls .ull.esq .boleta {
+    left: 53px;
+    top: 2px;
+}
+.ulls .ull.esq .boleta .llum{
+    left: 22px;
+    top: 1px;
+}
+.orelles {
+    height: 150px;
+    width: 600px;
+    top: -100px;
+    left: -50px;
+}
+.orella {
+    height: 150px;
+    width: 80px;
+    background-color: bisque;
+    z-index: -1;
+}
+.orella.esq {
+    left: 10px;
+    border-radius: 100% 50% 0 200%;
+}
+.orella.dre {
+    top: -150px;
+    left: 510px;
+    border-radius: 50% 100% 200% 0;
+}
+.perla {
+    width: 50px;
+    height: 50px;
+    background-image: radial-gradient(circle at 20% 20%, white, rgb(188, 211, 236));
+    border-radius: 50%;
+    top: 120px;
+
+}
+.orelles .orella.dre .perla {
+    left: 30px;
+}
+.nas {
+    width: 40px;
+    height: 160px;
+    border-radius: 70% 70% 50% 50%;
+    background-image: linear-gradient(antiquewhite, rgb(255, 214, 192));
+    top: -250px;
+    left: 230px;
+    z-index: 1;
+}
+.sang {
+    width: 10px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: red;
+    top: 160px;
+    left: 21px;
+    z-index: 1;
+}
+.nas:hover > .sang{
+    animation: sang 3s infinite;
+}
+.boca {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(227, 168, 178);
+    border-radius: 50%;
+    top: -200px;
+    left: 200px;
+    overflow: hidden;
+}
+.dents {
+    width: 15px;
+    height: 20px;
+    background-color: white;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    left: 70px;
+}
+.llengua {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(231, 130, 145);
+    border-radius: 50%;
+    top: 0px;
+    left: 10px;
+}
+.rubors {
+    width: 900px;
+}
+.rubor{
+    width: 230px;
+    height: 230px;
+    float: left;
+    margin-left: -8px;
+    margin-right: 80px;
+    border-radius: 50%;
+    top: -480px;
+    background-image: radial-gradient(rgb(255, 214, 220), transparent, transparent);
+}
+.llagrismes {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    top: 55px;
+    left: 60px;
+    background-color: rgb(136, 211, 255);
+}
+.rubors .rubor.dre .llagrismes {
+    left: 120px;
+}
+.rubors:hover > .rubor > .llagrismes{
+    animation: llagrismes 0.5s infinite linear;
+}
+.coll {
+    width: 240px;
+    height: 170px;
+    background-color: rgb(231, 204, 173);
+    top: -200px;
+    left: 130px;
+    z-index: -1;
+}
+
+@keyframes llagrismes {
+    0% {
+        top: 55px;
+        background-color: rgb(136, 211, 255);
+    }
+    100% {
+        top: 350px;
+        background-color: transparent;
+    }
+}
+@keyframes sang {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 50px;
+    }
+}
+.wrapper { 
+    height: 850px;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: -70px;
+    bottom: 0;
+    position: absolute;
+    z-index: -3;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 5s ease infinite;
+    -z-animation: rainbow 5s ease infinite;
+    -o-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }

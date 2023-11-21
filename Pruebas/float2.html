@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float_2</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div {
+            background-color: rgb(79, 119, 168);
+            margin: 0;
+            height: 50px;
+        }
+        .cap {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 8rem;
+        }
+        h1 {
+            margin-top: 0;
+            padding-top: 6px;
+        }
+        h1.contingut {
+            margin: 3
+        }
+        h2, p {
+            margin: 2%;
+        }
+        .menu {
+            background-color: rgb(130, 198, 232);
+            float: left;
+            width: 20%;
+            height: 300px;
+            
+        }
+        .contingut {
+            background-color: white;
+            float: left;
+            width: 60%;
+            height: 1045px;
+            overflow: scroll;
+        }
+        .lateral {
+            background-color: rgb(130, 198, 232);
+            float: left;
+            width: 20%;
+            height: 300px;
+        }
+        .peu {
+            clear: both;
+        }
+        .navegacio {
+            
+        }
+        .primernivell {
+            background: lightskyblue;
+            color: white;
+            margin: 0.25rem;
+            display: inline-block;
+            padding: 0.25rem;
+            height: 2rem;
+            position: relative;
+        } 
+        .primernivell:hover {
+            background: rgb(93, 179, 221);
+            
+        }
+        .secundari {
+            display: none;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 2.5rem;
+        }
+        .primernivell:hover > .secundari{
+            display: block;
+        }
+        .segonnivell {
+            background: lightskyblue;
+            display: block;
+            margin: 0;
+            top: 2rem;
+            font-size: 0.76rem;
+            height: 2rem;
+            border-bottom: solid transparent 1px;
+        }
+        .segonnivell:hover {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="cap">
+        <h1>Shuangshuangbook</h1>
+        <ul class="navegacio">
+            <li class="primernivell">Opcio 1
+                <ul class="secundari">
+                    <li class="segonnivell">Sup-opció 1</li>
+                    <li class="segonnivell">Sup-opció 2</li>
+                    <li class="segonnivell">Sup-opció 3</li>
+                    <li class="segonnivell">Sup-opció 4</li>
+                    <li class="segonnivell">Sup-opció 5</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opcio 2
+                <ul class="secundari">
+                    <li class="segonnivell">Sup-opció 1</li>
+                    <li class="segonnivell">Sup-opció 2</li>
+                    <li class="segonnivell">Sup-opció 3</li>
+                    <li class="segonnivell">Sup-opció 4</li>
+                    <li class="segonnivell">Sup-opció 5</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opcio 3
+                <ul class="secundari">
+                    <li class="segonnivell">Sup-opció 1</li>
+                    <li class="segonnivell">Sup-opció 2</li>
+                    <li class="segonnivell">Sup-opció 3</li>
+                    <li class="segonnivell">Sup-opció 4</li>
+                    <li class="segonnivell">Sup-opció 5</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opcio 4
+                <ul class="secundari">
+                    <li class="segonnivell">Sup-opció 1</li>
+                    <li class="segonnivell">Sup-opció 2</li>
+                    <li class="segonnivell">Sup-opció 3</li>
+                    <li class="segonnivell">Sup-opció 4</li>
+                    <li class="segonnivell">Sup-opció 5</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opcio 5
+                <ul class="secundari">
+                    <li class="segonnivell">Sup-opció 1</li>
+                    <li class="segonnivell">Sup-opció 2</li>
+                    <li class="segonnivell">Sup-opció 3</li>
+                    <li class="segonnivell">Sup-opció 4</li>
+                    <li class="segonnivell">Sup-opció 5</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="menu">Home
+        <ul>
+            <li><a href="#e1">Entrada 1</a></li>
+            <li><a href="#e2">Entrada 2</a></li>
+            <li><a href="#e3">Entrada 3</a></li>
+            <li><a href="#e4">Entrada 4</a></li>
+            <li><a href="#e5">Entrada 5</a></li>
+            <li><a href="#e6">Entrada 6</a></li>
+            <li><a href="#e7">Entrada 7</a></li>
+            <li><a href="#e8">Entrada 8</a></li>
+            <li><a href="#e9">Entrada 9</a></li>
+            <li><a href="#e10">Entrada 10</a></li>
+            <li><a href="#e11">Entrada 11</a></li>
+            <li><a href="#e12">Entrada 12</a></li>
+        </ul>
+    </div>
+    <div class="contingut">
+        <h1>Timeline</h1>
+        <h2 id="e1">Part 1</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quaerat nobis consequuntur repellendus quasi velit, nisi molestias. Quod beatae tempore tempora inventore hic est libero provident? Cumque ullam voluptate culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e2">Part 2</h2>
+        <p>Qui vel, expedita odit ab ducimus cupiditate, obcaecati officiis placeat nemo rerum culpa nisi suscipit quibusdam vero beatae accusantium recusandae libero sequi impedit molestiae rem veritatis? Commodi sunt laborum eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e3">Part 3</h2>
+        <p>Ipsum, dicta, assumenda voluptatibus cupiditate vel, officiis tempore repellendus cumque quisquam laborum reprehenderit aut! Vel vero impedit magnam sapiente dignissimos? Nisi et cumque deserunt laudantium consectetur dolorum id dicta corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e4">Part 4</h2>
+        <p>Illo iste pariatur temporibus minima sed impedit totam placeat, quaerat, soluta, explicabo dolore rerum! Aliquam iusto velit autem illo dignissimos consequatur eligendi unde eum, accusantium mollitia recusandae beatae ipsum facilis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e5">Part 5</h2>
+        <p>Tempora quod hic quibusdam accusamus nemo officia pariatur in perferendis distinctio fugit unde velit illum laudantium aliquid architecto perspiciatis, minus rerum sed dicta doloribus sunt assumenda quos? Earum, sint error! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e6">Part 6</h2>
+        <p>Totam aspernatur repudiandae eos porro voluptas itaque nostrum ea voluptatum quo placeat quia praesentium, quidem ullam incidunt neque, quas est sit error vitae aut odit qui laudantium dolorem sapiente? Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e7">Part 7</h2>
+        <p>Totam aspernatur repudiandae eos porro voluptas itaque nostrum ea voluptatum quo placeat quia praesentium, quidem ullam incidunt neque, quas est sit error vitae aut odit qui laudantium dolorem sapiente? Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e8">Part 8</h2>
+        <p>Totam aspernatur repudiandae eos porro voluptas itaque nostrum ea voluptatum quo placeat quia praesentium, quidem ullam incidunt neque, quas est sit error vitae aut odit qui laudantium dolorem sapiente? Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e9">Part 9</h2>
+        <p>Totam aspernatur repudiandae eos porro voluptas itaque nostrum ea voluptatum quo placeat quia praesentium, quidem ullam incidunt neque, quas est sit error vitae aut odit qui laudantium dolorem sapiente? Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e10">Part 10</h2>
+        <p>Totam aspernatur repudiandae eos porro voluptas itaque nostrum ea voluptatum quo placeat quia praesentium, quidem ullam incidunt neque, quas est sit error vitae aut odit qui laudantium dolorem sapiente? Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e11">Part 11</h2>
+        <p>Totam aspernatur repudiandae eos porro voluptas itaque nostrum ea voluptatum quo placeat quia praesentium, quidem ullam incidunt neque, quas est sit error vitae aut odit qui laudantium dolorem sapiente? Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+        <h2 id="e12">Part 12</h2>
+        <p>Totam aspernatur repudiandae eos porro voluptas itaque nostrum ea voluptatum quo placeat quia praesentium, quidem ullam incidunt neque, quas est sit error vitae aut odit qui laudantium dolorem sapiente? Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, reiciendis voluptatem eius, hic atque deserunt delectus explicabo voluptatibus magnam quae eum illo iure laborum unde consequatur perspiciatis. Numquam, fugiat! Ducimus.</p>
+    </div>
+    <div class="lateral">Contacts</div>
+    <div class="peu">Peu</div>
+</body>
+</html>

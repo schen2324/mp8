@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #666;
+}
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+h1, p {
+    padding: 25px;
+    margin: 0;
+    width: 350px;
+}
+div {
+    margin: 0;
+    background: no-repeat;
+    background-position: 400px;
+}
+a {
+    text-decoration: none;
+    font-family: Helvetica, Sans-serif;
+    color: #6c3;
+}
+ul {
+    list-style: none;
+    display: inline;
+    float: right;
+    clear: both;
+    margin-top: 10px;
+}
+li {
+    display: inline;
+    margin: 0 18px 0 0;
+    font-size: 18px;
+}
+#menu {
+    background-color: #fff;
+    height: 40px;
+}
+#coneix {
+    background-color: #6c3;
+    height: 550px;
+    background-image: url(img/img-hero-full-list.png);
+}
+#tot {
+    background-color: #fff;
+    height: 641px;
+    background-image: url(img/allinone.jpg);
+}
+#util {
+    background-color: #333333;
+    height: 500px;
+    color: #fff;
+    background-image: url(img/curator-short.png);
+}
+#rapid {
+    background-color: #eeecee;
+    height: 550px;
+    background-image: url(img/img-hero-full-list.png);
+}
+#facil {
+    background-color: #6c3;
+    height: 550px;
+    background-image: url(img/mobile-share.png);
+    background-size: contain;
+}
+#arreu {
+    background-color: #eeecee;
+    height: 643px;
+    background-image: url(img/anywhere.png);
+}
+#canvia {
+    background-color: #333333;
+    height: 200px;
+    text-align: center;
+}
+img {
+    margin: 25px;
+}
+#menu img{
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 25px;
+    display: inline;
+}
+#tornar {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 200px;
+    right: 200px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 150px;
+}
