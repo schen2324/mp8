@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sedgwick Ave', cursive;
+    position: relative;
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 50rem;
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+#navegador {
+    width: 100%;
+    height: 6rem;
+    background: white;
+    border-bottom: solid black 0.25rem;
+    display: block;
+    float: left;
+    position: fixed;
+    z-index: 2;
+}
+img {
+    width: 4rem;
+    margin: 0.8rem 0 0 2rem;
+    display: block;
+    float: left;
+}
+h1 {
+    display: block;
+    float: left;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+.menu {
+    float: right;
+}
+a {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.menu a {
+    width: 6rem;
+    height: 3.5rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    line-height: 3.5rem;
+    text-align: center;
+    float: left;
+    margin: 1rem;
+}
+.menu a:hover {
+    color: red;
+}
+#contenido {
+    width: 125rem;
+    height: auto;
+    margin: auto;
+}
+#sobremi {
+    width: 100%;
+    height: 70rem;
+    padding-top: 6rem;
+}
+h2 {
+    font-size: 6rem;
+    margin: 20rem 0 2rem 20rem;
+}
+p {
+    font-size: 2rem;
+    width: 40rem;
+    margin-left: 20rem;
+}
+.persona {
+    width: 25rem;
+    height: 25rem;
+    float: right;
+    display: block;
+    margin: -23rem 30rem 0 0;
+    background: url(img/persona.png);
+    background-size: cover;
+}
+.corazon {
+    width: 6.5rem;
+    height: 4.8rem;
+    background: url(img/corazon.png);
+    background-size: cover;
+}
+.persona:hover > .corazon {
+    background: url(img/corazon_rellno.png);
+    background-size: cover;
+}
+.corazonrelleno {
+    width: 6rem;
+    height: 4.45rem;
+    background: url(img/corazon.png);
+    background-size: cover;
+    top: -10rem;
+    left: 5rem;
+    animation: fly 1s infinite ease-out;
+}
+.persona:hover > .corazonrelleno {
+    background: url(img/corazon_rellno.png);
+    background-size: cover;
+    
+}
+#practicas {
+    width: 100%;
+    height: 170rem;
+    margin-top: -23rem;
+    margin-bottom: 0;
+}
+#practicas p{
+    margin-top: 0;
+}
+#practicas h2{
+    width: 85rem;
+    text-align: center;
+}
+#trabajos{
+    width: 85rem;
+    height: 155rem;
+    margin-left: 20rem;
+}
+#trabajos a {
+    display: block;
+    width: 25rem;
+    height: 30rem;
+    border: solid black 0.3rem;
+    border-radius: 2rem;
+    line-height: 55rem;
+    font-size: 3rem;
+    text-align: center;
+    float: left;
+    margin: 0.9rem;
+    background: white;
+    z-index: 1;
+    background-image: url(img/montaña.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#trabajos a:hover {
+    filter: brightness(90%);
+    background-size: 235%;
+    background-position: left bottom;
+    color: red;
+}
+#trabajos .intro:hover {
+    background-image: url(img/intro.png);
+}
+#trabajos .horario:hover {
+    background-image: url(img/horario.png);
+    background-position: center bottom;
+}
+#trabajos .feedly:hover {
+    background-image: url(img/feedly.png);
+}
+#trabajos .ifpagram:hover {
+    background-image: url(img/ifpagram.png);
+    background-position: center bottom;
+}
+#trabajos .ajedrez:hover {
+    background-image: url(img/ajedrez.png);
+    background-position: center bottom;
+}
+#trabajos .absolute:hover {
+    background-image: url(img/absolute.png);
+}
+#trabajos .floreta:hover {
+    background-image: url(img/floreta.png);
+    background-position: center bottom;
+}
+#trabajos .cara:hover {
+    background-image: url(img/cara.png);
+    background-position: center bottom;
+}
+#trabajos .ps:hover {
+    background-image: url(img/ps.png);
+    background-position: center bottom;
+}
+#trabajos .pelys:hover {
+    background-image: url(img/pelys.png);
+}
+#trabajos .etc:hover {
+    background-image: none;
+    filter: brightness(100%);
+}
+#trabajos .etc {
+    background-image: none;
+    line-height: 30rem;
+    
+}
+.flores {
+    position: fixed;
+    width: 20rem;
+    height: 40rem;
+    display: block;
+    z-index: 2;
+    top: 15rem;
+    left: 5rem;
+    float: left;
+}
+.flores.dos {
+    left: 115rem;
+}
+.flor {
+    width: 10rem;
+    height: 10rem;
+    background-image: url(img/flor01.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    animation: flor 1.5s infinite;
+}
+.flor.dos {
+    background-image: url(img/flor02.png);
+}
+#contacto {
+    width: 100%;
+    height: 50rem;
+    margin: 0 auto 0 auto;
+    top: -9rem;
+    padding-top: 2rem;
+    z-index: 2;
+}
+#contacto h2 {
+    margin: 5rem auto 0 auto;
+    width: 85rem;
+    text-align: center;
+}
+.micontacto {
+    width: 85rem;
+    height: 40rem;
+    left: 20rem;
+    font-size: 2rem;
+}
+.micontacto li {
+    width: 85rem;
+    height: 4rem;
+    margin-bottom: 5rem;
+    line-height: 13rem;
+    text-align: center;
+    overflow: visible;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tele {
+    background-image: url(img/tele.png);
+}
+.instagram {
+    background-image: url(img/ins.png);
+}
+.direccion {
+    background-image: url(img/direccion.png);
+    background-position: 13% 0%;
+}
+.correo {
+    background-image: url(img/mail.png);
+    background-size: 40%;
+}
+@keyframes fly {
+    0% {
+        top: -6.5rem;
+        left: 5rem;
+        opacity: 0;
+        width: 3rem;
+        height: 2.225rem;
+    }
+    50% {
+        top: -15rem;
+        left: 7rem;
+    }
+    100% {
+        top: -15rem;
+        left: 5rem;
+        opacity: 100%;
+        width: 9rem;
+        height: 6.675rem;
+    }
+}
+@keyframes flor {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+.arriba {
+    width: 6rem;
+    height: 4.5rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: inline;
+    background: white;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 7rem;
+    z-index: 3;
+}
+.arriba:hover {
+    color: red;
+}
