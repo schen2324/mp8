@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: scroll;
+    cursor: url(img/cursor.cur), auto;
 }
 #navegador {
     width: 100%;
