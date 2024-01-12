@@ -1,19 +1,27 @@
-* {
+*, *:before {
     margin: 0;
     padding: 0;
     font-family: 'Sedgwick Ave', cursive;
     position: relative;
     list-style: none;
 }
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
 body {
     width: 100%;
-    height: 50rem;
+    height: 90rem;
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: scroll;
-    cursor: url(img/cursor.cur), auto;
+    cursor: url(img/cursor.cur), alias;
+}
+input {
+    display: none;
 }
 #navegador {
     width: 100%;
@@ -27,7 +35,7 @@ body {
 }
 img {
     width: 4rem;
-    margin: 0.8rem 0 0 2rem;
+    margin: 0.4rem 0 0 2rem;
     display: block;
     float: left;
 }
@@ -55,43 +63,58 @@ a {
     text-align: center;
     float: left;
     margin: 1rem;
+    transition: all 0.4s;
 }
 .menu a:hover {
-    color: red;
+    color: white;
+    background-color: black;
+}
+.menumovil {
+    display: none;
 }
 #contenido {
-    width: 125rem;
+    width: 85%;
     height: auto;
     margin: auto;
 }
 #sobremi {
-    width: 100%;
-    height: 70rem;
+    width: 70%;
+    height: 90rem;
     padding-top: 6rem;
+    margin: auto;
+
 }
 h2 {
     font-size: 6rem;
-    margin: 20rem 0 2rem 20rem;
+    padding: 20rem 0 2rem 5%;
 }
 p {
     font-size: 2rem;
     width: 40rem;
-    margin-left: 20rem;
+    margin-left: 5%;
+    margin-bottom: 20rem;
+    float: left;
+    display: block;
 }
 .persona {
     width: 25rem;
     height: 25rem;
-    float: right;
+    margin-top: -10rem;
+    margin-left: 5%;
+    float: left;
     display: block;
-    margin: -23rem 30rem 0 0;
     background: url(img/persona.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .corazon {
-    width: 6.5rem;
-    height: 4.8rem;
+    width: 27%;
+    height: 19%;
     background: url(img/corazon.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+
 }
 .persona:hover > .corazon {
     background: url(img/corazon_rellno.png);
@@ -105,111 +128,71 @@ p {
     top: -10rem;
     left: 5rem;
     animation: fly 1s infinite ease-out;
+    transition: all 0.4s;
 }
 .persona:hover > .corazonrelleno {
     background: url(img/corazon_rellno.png);
     background-size: cover;
     
 }
-#practicas {
-    width: 100%;
-    height: 170rem;
-    margin-top: -23rem;
-    margin-bottom: 0;
-}
-#practicas p{
-    margin-top: 0;
-}
-#practicas h2{
-    width: 85rem;
-    text-align: center;
+#mipracticas {
+    width: 70%;
+    margin: -20rem auto 0 auto;
 }
 #trabajos{
-    width: 85rem;
-    height: 155rem;
-    margin-left: 20rem;
+    width: 70%;
+    height: 150rem;
+    margin: auto;
+    text-align: center;
 }
-#trabajos a {
-    display: block;
-    width: 25rem;
-    height: 30rem;
+.practica {
+    float: left;
+    width: 90%;
+    height: 10rem;
     border: solid black 0.3rem;
     border-radius: 2rem;
-    line-height: 55rem;
-    font-size: 3rem;
+    line-height: 10rem;
+    font-size: 4rem;
     text-align: center;
-    float: left;
-    margin: 0.9rem;
+    margin: 1rem 5% 0 5%;
     background: white;
     z-index: 1;
     background-image: url(img/montanya.png);
-    background-size: 40%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 10% center;
+    transition: all 0.4s;
+    color: transparent;
 }
-#trabajos a:hover {
-    filter: brightness(90%);
-    background-size: 235%;
+.practica:hover {
+    background-color: black;
+    background-image: url(img/montanya_blanco.png);
+    background-size: 20%;
     background-position: left bottom;
-    color: red;
+    color: white;
+    height: 20rem;
+    line-height: 20rem;
 }
-#trabajos .intro:hover {
-    background-image: url(img/intro.png);
-}
-#trabajos .horario:hover {
-    background-image: url(img/horario.png);
-    background-position: center bottom;
-}
-#trabajos .feedly:hover {
-    background-image: url(img/feedly.png);
-}
-#trabajos .ifpagram:hover {
-    background-image: url(img/ifpagram.png);
-    background-position: center bottom;
-}
-#trabajos .ajedrez:hover {
-    background-image: url(img/ajedrez.png);
-    background-position: center bottom;
-}
-#trabajos .absolute:hover {
-    background-image: url(img/absolute.png);
-}
-#trabajos .floreta:hover {
-    background-image: url(img/floreta.png);
-    background-position: center bottom;
-}
-#trabajos .cara:hover {
-    background-image: url(img/cara.png);
-    background-position: center bottom;
-}
-#trabajos .ps:hover {
-    background-image: url(img/ps.png);
-    background-position: center bottom;
-}
-#trabajos .pelys:hover {
-    background-image: url(img/pelys.png);
-}
-#trabajos .etc:hover {
+.practica.etc:hover {
     background-image: none;
     filter: brightness(100%);
 }
-#trabajos .etc {
+.practica.etc {
     background-image: none;
-    line-height: 30rem;
-    
+    color: black;
 }
 .flores {
     position: fixed;
-    width: 20rem;
+    width: 10rem;
     height: 40rem;
-    display: block;
     z-index: 2;
     top: 15rem;
-    left: 5rem;
-    float: left;
+}
+.flores.uno {
+    left: 5%;
 }
 .flores.dos {
-    left: 115rem;
+    right: 5%;
 }
 .flor {
     width: 10rem;
@@ -225,27 +208,28 @@ p {
     background-image: url(img/flor02.png);
 }
 #contacto {
-    width: 100%;
+    width: 80%;
     height: 50rem;
     margin: 0 auto 0 auto;
-    top: -9rem;
+    top: -15rem;
     padding-top: 2rem;
-    z-index: 2;
+    z-index: -1;
+    clear: both;
 }
 #contacto h2 {
-    margin: 5rem auto 0 auto;
-    width: 85rem;
+    width: 95%;
     text-align: center;
 }
 .micontacto {
-    width: 85rem;
+    width: 100%;
     height: 40rem;
-    left: 20rem;
+    margin: auto;
     font-size: 2rem;
 }
 .micontacto li {
-    width: 85rem;
+    width: 70%;
     height: 4rem;
+    margin: auto;
     margin-bottom: 5rem;
     line-height: 13rem;
     text-align: center;
@@ -312,9 +296,118 @@ p {
     line-height: 4.5rem;
     text-align: center;
     font-size: 1.2rem;
-    margin: 7rem;
+    margin: 5rem;
     z-index: 3;
+    transition: all 0.4s;
 }
 .arriba:hover {
-    color: red;
+    background: black;
+    color: white;
+}
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        background-image: url(img/fondo_vertical.jpg);
+        background-attachment: fixed;
+    }
+    #navegador {
+        width: 30rem;
+        height: 4rem;
+        border-bottom: solid black 0.2rem;
+        top: 0;
+    }
+    #navegador img {
+        width: 3rem;
+        margin-left: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+        bottom: 0.5rem;
+    }
+    .menu {
+        display: none;
+    }
+    input {
+        appearance: none;
+        position: fixed;
+        z-index: 10;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+    }
+    input:before {
+        content: "— — —";
+        width: 2.5rem;
+        height: 2rem;
+        opacity: 0.8;
+        display: block;
+        font-size: 2rem;
+        line-height: 0.8rem;
+        text-align: right;
+        z-index: 3;
+    }
+    input:checked:before {
+        content: "— — —";
+        width: 2.5rem;
+        height: 2rem;
+        opacity: 0.8;
+        display: block;
+        font-size: 2rem;
+        line-height: 0.8rem;
+        text-align: right;
+    }
+    label {
+        position: fixed;
+        width: 100%;
+        height: 22%;
+        background-color: black;
+        z-index: 2;
+        top: -20%;
+        transition: 0.8s;
+    }
+    .menumovil {
+        width: 70%;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin: 17% auto 0 auto;
+        text-align: center;
+        display: block;
+    }
+    .menumovil a {
+        color: white;
+
+    }
+    .menumovil a:active ~ label{
+        right: -50%;
+    }
+    input:checked ~ label {
+        top: 0;
+    }
+    #contenido {
+        width: 100%;
+    }
+    .flores {
+        left: 0;
+        width: 5rem;
+        top: 20%;
+    }
+    .flores.dos {
+        left: 78%;
+    }
+    .flor {
+        width: 5rem;
+    }
+    #sobremi p {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    #trabajos {
+        width: 60%;
+    }
+    .practica {
+        border: solid black 0.2rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
 }
