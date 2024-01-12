@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es" manifest="cache.manifest">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
-
+    
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
+    
     <meta name="theme-color" content="#FF9933">
     <meta name="msapplication-navbutton-color" content="#FF9933">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,25 +16,30 @@
     <link rel="apple-touch-icon" href="img/icon.png">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Webapp</title>
-
-    <script type="text/javascript">
-        var cache = window.applicationCache;
-
-        cache.addEventListener('updateready', function(e) {
-            if (cache.status == 4) {
-                cache.swapCache();
-                if (confirm('recarreguem?')) {
-                    window.location.reload();
-                }
+    <title>Responsive</title>
+    <style>
+        /* disseny mobil vertical */
+        @media screen and (max-width: 490px) {
+            body {
+                background: red;
+            } 
+        }
+        /* disseny mobil horizontal */
+        @media screen and (min-width: 491px) and (max-width: 1024px) {
+            body {
+                background: yellow;
             }
-        });
-    </script>
+        }
+        /* disseny mobil escriptori */
+        @media screen and (min-width: 1025px) {
+            body {
+                background: green;
+            }
+            
+        }
+    </style>
 </head>
-
 <body>
-    <img src="img/foto.jpg" alt="">
-    <input type="button" onclick="cache.update();" />
+    
 </body>
-
 </html>
