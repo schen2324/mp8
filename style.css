@@ -310,6 +310,7 @@ p {
         background-image: url(img/fondo_vertical.jpg);
         background-attachment: fixed;
     }
+
     #navegador {
         width: 30rem;
         height: 4rem;
@@ -321,7 +322,7 @@ p {
         margin-left: 1rem;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         bottom: 0.5rem;
     }
     .menu {
@@ -385,6 +386,7 @@ p {
     }
     #contenido {
         width: 100%;
+        height: 200rem;
     }
     .flores {
         left: 0;
@@ -397,17 +399,72 @@ p {
     .flor {
         width: 5rem;
     }
+    #sobremi {
+        width: 60%;
+        padding-top: 0rem;
+        top: -10rem;
+    }
+    .persona{
+        width: 10rem;
+        height: 10rem;
+        top: -5rem;
+        left: 4rem;
+    }
+    .corazonrelleno {
+        width: 3rem;
+        height: 2.225rem;
+    }
+    @keyframes fly {
+        0% {
+            top: -2.5rem;
+            left: 5rem;
+            opacity: 0;
+            width: 3rem;
+            height: 2.225rem;
+        }
+        50% {
+            top: -5rem;
+            left: 7rem;
+        }
+        100% {
+            top: -7rem;
+            left: 5rem;
+            opacity: 100%;
+            width: 3rem;
+            height: 2.225rem;
+        }
+    }    
     #sobremi p {
-        width: 70%;
-        font-size: 1.5rem;
+        width: 100%;
+        font-size: 1rem;
     }
     #trabajos {
         width: 60%;
+        top: -45rem;
     }
+    
     .practica {
         border: solid black 0.2rem;
+        font-size: 2rem;
     }
     h2 {
         font-size: 3rem;
+    }
+    #mipracticas {
+        top: -45rem;
+        width: 60%;
+    }
+    #contacto {
+        top: -90rem;
+        height: 20rem;
+    }
+    .micontacto {
+        font-size: 1rem;
+    }
+    .micontacto li {
+        width: 70%;
+        height: 2rem;
+        line-height: 10rem;
+        top: -2rem;
     }
 }
