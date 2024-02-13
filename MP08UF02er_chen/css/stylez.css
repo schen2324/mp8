@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    margin: 0;
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body {
+    background-image: url(../img/fons.jpg);
+    background-size: contain;
+}
+.triangulo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 60%);
+    background-color: pink;
+    top: 0;
+    z-index: -10;
+}
+#cap {
+    width: 940px;
+    height: 589px;
+    margin: auto;
+}
+.titulo {
+    width: 25rem;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: auto;
+    top: 50px;
+    z-index: 10000;
+}
+a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+a:hover {
+    opacity: 1;
+}
+#cars {
+    width: 100% ;
+    height: 350px;
+    background: red;
+    margin: auto;
+    top: 150px;
+}
+#cos {
+    width: 960px;
+    height: 800px;
+    margin: auto;
+}
+.elemento {
+    width: 300px;
+    height: 240px;
+    margin: 10px;
+    background-color: white;
+    float: left;
+    display: inline-block;
+    filter: saturate(0.5);
+    transition: 0.3s linear;
+    opacity: 0.8;
+}
+.elemento:hover {
+    transform: rotate(360deg);
+    filter: saturate(1);
+    opacity: 1;
+}
+.foto {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+.uno {
+    background-image: url(../img/small/small_pulp.jpg);
+}
+.dos {
+    background-image: url(../img/small/small_taxi.jpg);
+}
+.tres {
+    background-image: url(../img/small/small_bond.jpg);
+}
+.cuatro {
+    background-image: url(../img/small/small_ghost.jpg);
+}
+.cinco {
+    background-image: url(../img/small/small_bean.jpg);
+}
+.seis {
+    background-image: url(../img/small/small_back.jpg);
+}
+.siete {
+    background-image: url(../img/small/small_rider.jpg);
+}
+.ocho {
+    background-image: url(../img/small/small_team.jpg);
+}
+.nueve {
+    background-image: url(../img/small/small_break.jpg);
+}
+.texto {
+    font-size: 1rem;
+    margin: 10px;
+    font-weight: 500;
+}
+#peu {
+    width: 940px;
+    height: 220px;
+    margin: auto;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/logo_carsandfilms.png);
+    margin: auto;
+}
+@media screen and (max-width: 480px) {
+    #cap {
+        width: 320px;
+        height: 289px;
+    }
+    .titulo {
+        font-size: 2rem;
+    }
+    #cos {
+        width: 320px;
+        height: 2350px;
+    }
+    #peu {
+        width: 320px;
+    }
+    .triangulo {
+        clip-path: polygon(10% 0%, 100% 0%, 100% 20%);
+        background-color: pink;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 940px) {
+    #cap {
+        width: 640px;
+        height: 489px;
+    }
+    #cos {
+        width: 640px;
+        height: 1350px;
+    }
+    #peu {
+        width: 640px;
+    }
+    .gwd-page-size {
+        width: 640px;
+        height: 589px;
+    }
+    .triangulo {
+        clip-path: polygon(10% 0%, 100% 0%, 100% 40%);
+        background-color: pink;
+    }
+    .gwd-img-lgwe {
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        left: 12%;
+        top: 0px;
+    }
+}
+

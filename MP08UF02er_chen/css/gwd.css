@@ -1,0 +1,126 @@
+.gwd-page-content {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1400px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    position: absolute;
+    background-color: transparent;
+}
+.gwd-page-wrapper {
+    position: absolute;
+    transform: translateZ(0px);
+    -webkit-transform: translateZ(0px);
+    -moz-transform: translateZ(0px);
+    background-color: transparent;
+}
+.gwd-page-size {
+    width: 940px;
+    height: 589px;
+}
+.gwd-img-lgwe {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 12%;
+    top: 0px;
+}
+.gwd-page-wrapper {} .gwd-page-wrapper {} .gwd-page-wrapper {} .gwd-page-wrapper {} .gwd-page-wrapper {} .gwd-page-wrapper {} .gwd-page-wrapper {} .gwd-page-wrapper {}@keyframes gwd-empty-animation {
+    0% {
+        opacity: 0.001;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes gwd-empty-animation {
+    0% {
+        opacity: 0.001;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes gwd-empty-animation {
+    0% {
+        opacity: 0.001;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#pulp.gwd-play-animation .event-1-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#taxi.gwd-play-animation .event-2-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#bond.gwd-play-animation .event-3-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#ghost.gwd-play-animation .event-4-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#bean.gwd-play-animation .event-5-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#back.gwd-play-animation .event-6-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#rider.gwd-play-animation .event-7-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#team.gwd-play-animation .event-8-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+#break.gwd-play-animation .event-9-animation {
+    animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -webkit-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+    -moz-animation: gwd-empty-animation 1s linear 0s 1 normal forwards;
+}
+@media screen and (max-width: 480px){
+    .gwd-page-size {
+        width: 320px;
+        height: 189px;
+    }
+    .gwd-img-lgwe {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        left: 12%;
+        top: 40%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 940px) {
+    .gwd-page-size {
+        width: 640px;
+        height: 389px;
+    }
+    .gwd-img-lgwe {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        left: 12%;
+        top: 20%;
+    }
+}

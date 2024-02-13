@@ -22,6 +22,35 @@
     <link rel="preload" href="Sobread.woff2" as="font" type="font/woff2" crossorigin>
     <title>Responsive</title>
     <style>
+        ul {
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        li {
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            line-height: 3rem;
+            border-radius: 50%;
+            float: left;
+            display: inline-block;
+            margin: 1rem;
+            background: pink;
+        }
+        #petit {
+            font-size: 1rem;
+        }
+        #mitja {
+            font-size: 1.5rem;
+        }
+        #gran {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
         /* disseny mobil vertical */
         @media screen and (max-width: 490px) {
             body {
@@ -80,22 +109,28 @@
     </style>
 </head>
 <body>
+    <ul>
+        <li id="petit">-</li>
+        <li id="mitja">=</li>
+        <li id="gran">+</li>
+    </ul>
     <div class="progras"></div>
     <h1>wow APP</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam neque, reiciendis minima velit eveniet veritatis quo libero rerum sint nisi dicta quisquam veniam possimus, facilis laborum dolor ad nesciunt.</p>
 </body>
 </html>
+<script src="js/script.js"></script>
